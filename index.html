@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade E-Solutions | High-Performance Trade Web Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --charcoal: #121212;
+            --steel: #A0A0A0;
+            --industrial-orange: #FF6B00;
+            --border-grey: #2A2A2A;
+        }
+
+        body {
+            background-color: var(--charcoal);
+            color: var(--steel);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .mono {
+            font-family: 'JetBrains+Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .border-technical {
+            border: 1px solid var(--border-grey);
+        }
+
+        .orange-glow:hover {
+            box-shadow: 0 0 15px rgba(255, 107, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .grid-bg {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, #1a1a1a 1px, transparent 1px),
+                linear-gradient(to bottom, #1a1a1a 1px, transparent 1px);
+        }
+
+        .cta-button {
+            background-color: var(--industrial-orange);
+            color: white;
+            padding: 1rem 2rem;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.1s ease;
+        }
+
+        .cta-button:active {
+            transform: scale(0.98);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--charcoal);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-grey);
+        }
+    </style>
+</head>
+<body class="grid-bg">
+
+    <!-- NAVIGATION -->
+    <nav class="border-b border-technical sticky top-0 bg-[#121212]/90 backdrop-blur-md z-50">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-2 h-6 bg-[#FF6B00]"></div>
+                <span class="font-black text-white text-xl tracking-tighter">TRADE E-SOLUTIONS</span>
+            </div>
+            <div class="hidden md:flex gap-8 mono text-xs">
+                <a href="#" class="hover:text-white">Services</a>
+                <a href="#" class="hover:text-white">Work</a>
+                <a href="#" class="hover:text-white">Process</a>
+            </div>
+            <div class="mono text-[10px] hidden sm:block">
+                STATUS: <span class="text-green-500">SYSTEM_OPTIMAL</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="max-w-7xl mx-auto px-6 pt-24 pb-32">
+        <div class="mono mb-6 flex items-center gap-4">
+            <span class="text-[#FF6B00]">[ SITE_ORIGIN: SYDNEY_NSW ]</span>
+            <div class="h-[1px] flex-grow bg-border-grey"></div>
+        </div>
+        
+        <h1 class="text-5xl md:text-8xl font-black text-white leading-tight mb-8 max-w-4xl uppercase">
+            Websites Built for <span class="text-[#FF6B00]">the Tools.</span> Not the Office.
+        </h1>
+        
+        <p class="text-xl md:text-2xl text-steel max-w-2xl mb-12 leading-relaxed">
+            We build high-performance websites and automated lead systems for Sydney tradies. Stop losing jobs to slow sites and start winning more work while you're on-site.
+        </p>
+
+        <a href="#" class="cta-button orange-glow">
+            GET A FREE WEBSITE AUDIT
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+    </header>
+
+    <!-- SERVICES GRID -->
+    <section class="max-w-7xl mx-auto px-6 mb-32">
+        <div class="grid md:grid-cols-2 border-technical">
+            <!-- Web Design -->
+            <div class="p-8 md:p-12 border-b md:border-b-0 md:border-r border-technical">
+                <div class="mono text-[#FF6B00] mb-4">01 / WEB DESIGN</div>
+                <h2 class="text-3xl font-bold text-white mb-6 uppercase">High-Speed Conversion</h2>
+                <p class="text-lg leading-relaxed mb-8">
+                    Fast-loading, SEO-optimised sites built to rank on Google. We focus on local Sydney search visibility so you’re the first one homeowners call.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="mono px-2 py-1 bg-zinc-900 border border-technical">Local SEO</span>
+                    <span class="mono px-2 py-1 bg-zinc-900 border border-technical">Static Architecture</span>
+                    <span class="mono px-2 py-1 bg-zinc-900 border border-technical">Sydney Targeting</span>
+                </div>
+            </div>
+
+            <!-- Automation -->
+            <div class="p-8 md:p-12">
+                <div class="mono text-[#FF6B00] mb-4">02 / AUTOMATION</div>
+                <h2 class="text-3xl font-bold text-white mb-6 uppercase">Lead Management</h2>
+                <p class="text-lg leading-relaxed mb-8">
+                    Automatic lead capture and SMS follow-ups. Stop chasing quotes after hours—our systems handle the tyre-kickers so you only talk to serious clients.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="mono px-2 py-1 bg-zinc-900 border border-technical">SMS Integration</span>
+                    <span class="mono px-2 py-1 bg-zinc-900 border border-technical">Auto-Quoting</span>
+                    <span class="mono px-2 py-1 bg-zinc-900 border border-technical">CRM Sync</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNICAL SPEC SECTION (Utilitarian Vibe) -->
+    <section class="max-w-7xl mx-auto px-6 mb-32">
+        <div class="border-technical p-8 bg-[#181818]">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                <div>
+                    <h3 class="text-white font-bold text-xl uppercase mb-2">Local SEO for Contractors</h3>
+                    <p class="text-steel max-w-xl">Every project includes a proprietary technical audit to ensure your business dominates local search results across New South Wales.</p>
+                </div>
+                <div class="mono text-xs p-4 bg-black border border-technical">
+                    <div class="flex justify-between gap-8 mb-1">
+                        <span>Lighthouse Score:</span>
+                        <span class="text-green-500">100/100</span>
+                    </div>
+                    <div class="flex justify-between gap-8 mb-1">
+                        <span>Load Latency:</span>
+                        <span class="text-green-500">&lt; 250ms</span>
+                    </div>
+                    <div class="flex justify-between gap-8">
+                        <span>Deployment:</span>
+                        <span class="text-white">EDGE_SERVER</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-technical py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-8">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-2 h-4 bg-[#FF6B00]"></div>
+                    <span class="font-black text-white tracking-tighter">TRADE E-SOLUTIONS</span>
+                </div>
+                <p class="mono text-[10px]">Built for performance. Engineered in Sydney.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-12">
+                <div class="flex flex-col gap-2">
+                    <span class="mono text-white mb-2">Location</span>
+                    <span class="mono text-[11px]">Sydney, NSW</span>
+                    <span class="mono text-[11px]">Australia</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <span class="mono text-white mb-2">Social</span>
+                    <a href="#" class="mono text-[11px] hover:text-[#FF6B00]">Instagram</a>
+                    <a href="#" class="mono text-[11px] hover:text-[#FF6B00]">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-technical text-center">
+            <span class="mono text-[9px] text-[#444] tracking-[0.3em]">© 2024 TRADE E-SOLUTIONS SYSTEMS — ALL RIGHTS RESERVED</span>
+        </div>
+    </footer>
+
+</body>
+</html>
